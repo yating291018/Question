@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回答</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/amazeui.js"></script>
+    <script src="js/question.js"></script>
+</head>
+<body>
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+          <a href="/" class="header-logo">
+               <img class="am-header-icon-custom" src="data:image/svg+xml;charset&#x3D;utf-8,&lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; viewBox&#x3D;&quot;0 0 12 20&quot;&gt;&lt;path d&#x3D;&quot;M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z&quot; fill&#x3D;&quot;%23fff&quot;/&gt;&lt;/svg&gt;" alt=""/>
+          </a>
+      </div>
+      <div class="am-header-right am-header-nav">
+          <a href="ask.html" class="ask">
+              <i class="am-icon am-icon-edit"></i>
+              <span class="am-header-nav-title">
+                提问
+              </span>
+          </a>
+          <a href="#" class="asecond login">
+              <i class="am-icon am-icon-user-plus"></i>
+              <span class="am-header-nav-title">
+                登录
+              </span>
+          </a>
+          <div class="am-dropdown" data-am-dropdown>
+            <a href="#" class="am-btn  am-dropdown-toggle" data-am-dropdown-toggle>
+             <img src="image/user.png" alt="">
+             <span></span>
+            </a>
+            <ul class="am-dropdown-content">
+              <li>个人资料</li>
+              <li class="am-divider"></li>
+              <li>退出</li>
+            </ul>
+          </div>
+      </div>
+  </header>
+  <main>
+   <form class="am-form">
+       <div class="am-form-group formg">
+          <textarea  name="answer" rows="10" cols="30" placeholder="请输入你的回答" required maxLength="140" class="textarea"></textarea>
+          <span class="max"><span class="num">140</span>/140</span>
+          <div class="qqicon">
+             <img src="image/imgs/1.gif" height="24" width="24">
+             <ul class="i_list">
+                <li><img title="[尴尬]" src="image/imgs/1.gif" height="24" width="24"></li>
+                <li><img title="[生气]" src="image/imgs/2.gif" height="24" width="24"></li>
+                <li><img title="[色]" src="image/imgs/3.gif" height="24" width="24"></li>
+                <li><img title="[脸红]" src="image/imgs/4.gif" height="24" width="24"></li>
+                <li><img title="[酷]" src="image/imgs/5.gif" height="24" width="24"></li>
+                <li><img title="[害羞]" src="image/imgs/6.gif" height="24" width="24"></li>
+                <li><img title="[闭嘴]" src="image/imgs/7.gif" height="24" width="24"></li>
+                <li><img title="[睡觉]" src="image/imgs/8.gif" height="24" width="24"></li>
+                <li><img title="[打哭]" src="image/imgs/9.gif" height="24" width="24"></li>
+                <li><img title="[汗]" src="image/imgs/10.gif" height="24" width="24"></li>
+                <li><img title="[怒气]" src="image/imgs/11.gif" height="24" width="24"></li>
+                <li><img title="[调皮]" src="image/imgs/12.gif" height="24" width="24"></li>
+                <li><img title="[坏笑]" src="image/imgs/13.gif" height="24" width="24"></li>
+                <li><img title="[微笑]" src="image/imgs/14.gif" height="24" width="24"></li>
+                <li><img title="[气愤]" src="image/imgs/15.gif" height="24" width="24"></li>
+                <li><img title="[装逼]" src="image/imgs/16.gif" height="24" width="24"></li>
+                <li><img title="[无奈]" src="image/imgs/17.gif" height="24" width="24"></li>
+                <li><img title="[吐]" src="image/imgs/18.gif" height="24" width="24"></li>
+                <li><img title="[淫笑]" src="image/imgs/19.gif" height="24" width="24"></li>
+                <li><img title="[红]" src="image/imgs/20.gif" height="24" width="24"></li>
+                <li><img title="[不介意]" src="image/imgs/21.gif" height="24" width="24"></li>
+                <li><img title="[撇嘴]" src="image/imgs/22.gif" height="24" width="24"></li>
+                <li><img title="[添嘴]" src="image/imgs/23.gif" height="24" width="24"></li>
+                <li><img title="[无辜]" src="image/imgs/24.gif" height="24" width="24"></li>
+                <li><img title="[囧]" src="image/imgs/25.gif" height="24" width="24"></li>
+                <li><img title="[汗颜]" src="image/imgs/26.gif" height="24" width="24"></li>
+                <li><img title="[狂笑]" src="image/imgs/27.gif" height="24" width="24"></li>
+                <li><img title="[大兵]" src="image/imgs/28.gif" height="24" width="24"></li>
+                <li><img title="[奋斗]" src="image/imgs/29.gif" height="24" width="24"></li>
+                <li><img title="[疑问]" src="image/imgs/30.gif" height="24" width="24"></li>
+
+             </ul>
+          </div>
+       </div>
+       <button  class="am-btn am-btn-primary btn-loading-example am-btn-block askbtn">回答</button>
+   </form>
+  </main>
+  <button type="button" class="am-btn am-btn-primary fadeOut" data-am-modal="{target: '#my-alert'}"></button>
+  <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd">提示</div>
+      <div class="am-modal-bd title">
+      </div>
+      <div class="am-modal-footer">
+        <span class="am-modal-btn aok">确定</span>
+        <span class="am-modal-btn aclose">取消</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

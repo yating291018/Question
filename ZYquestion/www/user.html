@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+  <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+          <a href="/" class="header-logo">
+               <img class="am-header-icon-custom" src="data:image/svg+xml;charset&#x3D;utf-8,&lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; viewBox&#x3D;&quot;0 0 12 20&quot;&gt;&lt;path d&#x3D;&quot;M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z&quot; fill&#x3D;&quot;%23fff&quot;/&gt;&lt;/svg&gt;" alt=""/>
+          </a>
+      </div>
+      <div class="am-header-right am-header-nav">
+          <a href="#" class="ask">
+              <i class="am-icon am-icon-edit"></i>
+              <span class="am-header-nav-title">
+                提问
+              </span>
+          </a>
+          <a href="#" class="asecond login">
+              <i class="am-icon am-icon-user-plus"></i>
+              <span class="am-header-nav-title">
+                登录
+              </span>
+          </a>
+          <div class="am-dropdown" data-am-dropdown>
+            <a href="#" class="am-btn  am-dropdown-toggle" data-am-dropdown-toggle>
+             <img src="image/user.png" alt="">
+             <span></span>
+            </a>
+            <ul class="am-dropdown-content">
+              <li>个人资料</li>
+              <li class="am-divider"></li>
+              <li>退出</li>
+            </ul>
+          </div>
+      </div>
+  </header>
+  <main>
+   <div data-am-widget="list_news" class="am-list-news am-list-news-default userdes" >
+          <div class="am-list-news-bd">
+              <ul class="am-list">
+                  <li class="header-img">
+                    <img src="image/user.png" alt="" class="upload-img" onerror="this.src='image/user.png'">
+                    <form>
+                       <input type="file" name="header" required>
+                    </form>
+                  </li>
+                  <li class="am-g am-list-item-dated" data-info="username">
+                      <a href="##" class="am-list-item-hd ">
+                         姓名:
+                      </a>
+                      <span class="am-list-date">2013-09-18</span>
+                  </li>
+                  <li class="am-g am-list-item-dated" data-info="isMale">
+                      <a href="##" class="am-list-item-hd ">性别:</a>
+                      <span class="am-list-date">2013-10-14</span>
+                  </li>
+                  <li class="am-g am-list-item-dated" data-info="email">
+                      <a href="##" class="am-list-item-hd ">
+                          邮箱:
+                      </a>
+                      <span class="am-list-date">2013-11-18</span>
+                  </li>
+                  <li class="am-g am-list-item-dated" data-info="course">
+                      <a href="##" class="am-list-item-hd ">
+                          课程:
+                      </a>
+                      <span class="am-list-date">2013-11-18</span>
+                  </li>
+                  <li class="am-g am-list-item-dated" data-info="time">
+                      <a href="##" class="am-list-item-hd ">
+                          注册时间:
+                      </a>
+                      <span class="am-list-date">2013-11-18</span>
+                  </li>
+              </ul>
+          </div>
+    </div>
+    <input type="button" class="am-btn am-btn-primary btn-loading-example modify am-btn-block" value="修改密码">
+  </main>
+  <button type="button" class="am-btn am-btn-secondary uploadbtn" data-am-modal="{target:'#my-actions'}">111</button>
+<div class="am-modal-actions" id="my-actions">
+  <div class="am-modal-actions-group">
+    <ul class="am-list">
+      <li><a href="###" class="pic">从相册中选择</a></li>
+      <li class="am-modal-actions-danger">
+        <a href="###" class="pj">从相机中选择</a>
+      </li>
+    </ul>
+  </div>
+  <div class="am-modal-actions-group">
+    <button class="am-btn am-btn-secondary am-btn-block" data-am-modal-close>取消</button>
+  </div>
+</div>
+ <script src="js/amazeui.js"></script>
+ <script src="js/user.js"></script>
+</body>
+</html>

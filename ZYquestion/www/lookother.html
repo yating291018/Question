@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看他人资料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/amazeui.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/lookother.js"></script>
+</head>
+<body>
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+          <a href="/" class="header-logo">
+               <img class="am-header-icon-custom" src="data:image/svg+xml;charset&#x3D;utf-8,&lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; viewBox&#x3D;&quot;0 0 12 20&quot;&gt;&lt;path d&#x3D;&quot;M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z&quot; fill&#x3D;&quot;%23fff&quot;/&gt;&lt;/svg&gt;" alt=""/>
+          </a>
+      </div>
+      <h1 class="am-header-title">
+          查看
+      </h1>
+  </header>
+  <main>
+      <div class="formsearch">
+        <div class="am-u-lg-12">
+            <div class="am-input-group am-input-group-primary aniput">
+             <span class="am-input-group-btn aigb">
+               <button class="am-btn am-btn-primary searchbtn" type="button"><span class="am-icon-search"></span></button>
+             </span>
+              <input type="search" class="am-form-field search searchfile" placeholder="输入用户名搜索" autofocus="autofocus">
+              <div class="tishi">
+                <ul>
+                    <script id="users" type="text/html">
+                        {{each name}}
+                          {{if $index <=4}}
+                           <li>{{$value}}</li>
+                          {{/if}}
+                        {{/each}}
+                    </script>
+                </ul>
+              </div>
+            </div>
+       </div>
+    </div>
+
+     <div data-am-widget="list_news" class="am-list-news am-list-news-default" >
+          <div class="am-list-news-bd">
+              <ul class="am-list userlist">
+              <script id="otheruser" type="text/html">
+                 {{each userinfo}}
+                  <li class="am-g am-list-item-dated">
+                      <a href="##" class="am-list-item-hd looka">
+                        <img src="uploads/{{$value.header}}" height="48" width="48" class="otherimg" onerror="this.src='image/commit.png'">
+                      </a>
+                      <span class="am-list-date"><span class="lookuser">{{$value.username}}</span><span class="jian"></span></span>
+                  </li>
+                  {{/each}}
+                </script>
+              </ul>
+          </div>
+    </div>
+
+  </main>
+</body>
+</html>

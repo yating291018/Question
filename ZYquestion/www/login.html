@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/amazeui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/amazeui.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+  <header data-am-widget="header" class="am-header am-header-default am-header-fixed">
+      <div class="am-header-left am-header-nav">
+          <a href="/" class="header-logo">
+              <img class="am-header-icon-custom" src="data:image/svg+xml;charset&#x3D;utf-8,&lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; viewBox&#x3D;&quot;0 0 12 20&quot;&gt;&lt;path d&#x3D;&quot;M10,0l2,2l-8,8l8,8l-2,2L0,10L10,0z&quot; fill&#x3D;&quot;%23fff&quot;/&gt;&lt;/svg&gt;" alt=""/>
+          </a>
+      </div>
+      <h1 class="am-header-title">
+          登录
+      </h1>
+      <div class="am-header-right am-header-nav">
+          <a href="#" class="register">
+              <i class="am-icon am-icon-user-plus"></i>
+              <span class="am-header-nav-title">
+                注册
+              </span>
+          </a>
+      </div>
+  </header>
+  <main>
+     <div class="logo">
+         <img src="image/logo.png" height="69" width="147" alt="">
+     </div>
+     <form  class="am-form am-form-inline">
+      <div class="am-form-group am-form-icon">
+           <label class="am-form-label">
+              <i class="am-icon am-icon-user"></i>
+           </label>
+           <input type="text" name="username" class="am-form-field" placeholder="请输入用户名" required autocomplete="off">
+      </div>
+      <div class="message"></div>
+      <div class="am-form-group am-form-icon">
+       <label class="am-form-label">
+         <i class="am-icon-lock"></i>
+       </label>
+       <input type="password" name="password" class="am-form-field" placeholder="请输入密码" required pattern="^\w{6,16}$">
+      </div>
+      <div class="message error"></div>
+      <div class="zrem">
+        <a href="resetpass.html">忘记密码?</a>
+        <a href="register.html">注册</a>
+      </div>
+      <button  class="am-btn am-btn-primary btn-loading-example am-btn-block lbtn">登录</button>
+  </form>
+
+  </main>
+</body>
+</html>
